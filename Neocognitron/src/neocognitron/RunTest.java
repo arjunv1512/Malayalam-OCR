@@ -74,7 +74,7 @@ public class RunTest {
 
 		SimpleDateFormat dateFormat = new SimpleDateFormat("-yyyyMMdd-hhmmssSS");		
 		NeocognitronTrainer trainer = new NeocognitronTrainer(inputs, testInputs, new File ("data/Saved Networks/BestNeocognitron" + dateFormat.format(new Date())+ ".neo"));
-		Neocognitron n = trainer.getNeocognitron(20);
+		Neocognitron n = trainer.getNeocognitron(1);
 		//Neocognitron n = trainer.getNeocognitron((int)Math.round(Math.random()*15+5));
 		trainer.verifyNeocognitron(n, testInputs,false);
 	}

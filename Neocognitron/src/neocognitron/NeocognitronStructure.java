@@ -1,3 +1,4 @@
+
 package neocognitron;
 
 import java.awt.Color;
@@ -12,7 +13,7 @@ import javax.imageio.*;
  * all needed helper functions, in addition to reading an image from a
  * file and converting it to an input.
  * 
- * @author Nicholas J. Conn
+ *
  *
  */
 public class NeocognitronStructure implements Serializable {
@@ -26,7 +27,8 @@ public class NeocognitronStructure implements Serializable {
 
 	// Number of planes in each layer
 	//private int p = (int) Math.round(Math.random()*10+10);
-	private int p=16;
+	private int p=50;
+	//private int p=15;
 	public int[] numSPlanes = {p, p, p};
 	public int[] numCPlanes = {p, p, p};
 	
